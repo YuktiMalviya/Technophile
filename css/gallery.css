@@ -1,0 +1,102 @@
+#sec6
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.imgcontainer
+{
+  position: relative;
+  width: 800px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 340px;
+  grid-gap: 40px;
+}
+.imgcontainer .card
+{
+  position: relative;
+  background:#000;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.imgcontainer .card .img-box
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.imgcontainer .card:hover .img-box
+{
+  opacity:.5;
+}
+
+.imgcontainer .card .img-box img
+{
+  width: 100%;
+}
+.imgcontainer .card:hover .content
+{
+  bottom: 0;
+}
+.imgcontainer .card .content
+{
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: -100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+}
+.imgcontainer .card:nth-child(1) .content
+{
+  background:linear-gradient(0deg,#c21833,transparent);
+}
+
+.imgcontainer .card .content h2
+{
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+}
+.imgcontainer .card .content span
+{
+  color: #ffeb3b;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+.imgcontainer .card .content p
+{
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  font-size: 16px;
+}
+.imgcontainer .card .content ul
+{
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0px;
+  align-content: center;
+  justify-content: center;
+}
+.imgcontainer .card .content ul li
+{
+  list-style: none;
+}
+.imgcontainer .card .content ul li a
+{
+  color: #fff;
+  padding: 0 10px;
+  font-size: 18px;
+  transition: 0.5s;
+}

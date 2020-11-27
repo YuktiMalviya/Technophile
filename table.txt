@@ -1,0 +1,15 @@
+CREATE TABLE `student` (
+  `ID` int(5) NOT NULL auto_increment,
+  `NAME` varchar(50) NOT NULL,
+  `EMAIL` varchar(30) NOT NULL,
+  `PHNUMBER` varchar(15) NOT NULL,
+  `WHNUMBER` varchar(15) NOT NULL,
+  `COLLEGE` varchar(10) NOT NULL,
+  `YEAR` varchar(10) NOT NULL,
+  `BRANCH` varchar(10) NOT NULL,
+  `EVENT1` varchar(10) NOT NULL,
+  `EVENT2` varchar(10) NOT NULL,
+  `EVENT3` varchar(10) NOT NULL,
+  `EVENT4` varchar(20) NOT NULL,
+  PRIMARY KEY  (`ID`)
+);
